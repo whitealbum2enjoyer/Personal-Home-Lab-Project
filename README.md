@@ -178,7 +178,7 @@ SSL: Enabled using Let's Encrypt certificate. Force SSL and HTTP/2 support enabl
 
 WireGuard Config (wg0.conf - Client Example)
 
-# Example client config - DO NOT POST YOUR PRIVATE KEYS PUBLICLY
+# Example client config
 [Interface]
 PrivateKey = [CLIENT_PRIVATE_KEY]
 Address = 10.0.0.2/32
