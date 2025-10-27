@@ -1,4 +1,4 @@
-My Home Lab Project
+# My Home Lab Project
 
 <!-- Optional: Add a brief 1-2 sentence overview of your lab here. -->
 
@@ -10,47 +10,47 @@ This repository documents the setup, configuration, and evolution of my personal
 
 <!-- Caption: Figure 1: The main server running on repurposed hardware. -->
 
-Table of Contents
+## Table of Contents
 
-Goal
+* Goal
 
-Hardware
+* Hardware
 
-Software & Operating Systems
+* Software & Operating Systems
 
-Key Services Deployed
+* Key Services Deployed
 
-Network Configuration
+* Network Configuration
 
-Network Diagram
+* Network Diagram
 
-Key Configuration Files
+* Key Configuration Files
 
-Challenges & Solutions
+* Challenges & Solutions
 
-Future Plans
+* Future Plans
 
-Resources Used
+* Resources Used
 
-Goal
+## Goal
 
 <!-- Explain why you built this lab. What did you want to learn or achieve? -->
 
 The primary goal of this project was to gain hands-on experience with:
 
-Linux system administration (specifically Arch Linux).
+* Linux system administration (specifically Arch Linux).
 
-Containerization using Docker.
+* Containerization using Docker.
 
-Network services like DNS (Pi-hole) and reverse proxies (Nginx Proxy Manager).
+* Network services like DNS (Pi-hole) and reverse proxies (Nginx Proxy Manager).
 
-Self-hosting applications (Nextcloud).
+* Self-hosting applications (Nextcloud).
 
-Basic network security principles (VPNs, Firewall Rules).
+* Basic network security principles (VPNs, Firewall Rules).
 
-Utilizing older hardware effectively.
+* Utilizing older hardware effectively.
 
-Hardware
+## Hardware
 
 <!-- List the physical components of your lab. Be specific! -->
 
@@ -82,7 +82,7 @@ Other:
 
 <!-- Caption: Figure 2: The repurposed laptop serving as the core of the lab. -->
 
-Software & Operating Systems
+## Software & Operating Systems
 
 <!-- List the main OS and virtualization/container software. -->
 
@@ -92,7 +92,7 @@ Containerization: Docker & Docker Compose
 
 Virtualization: [e.g., Proxmox / VMware ESXi (if used)]
 
-Key Services Deployed
+## Key Services Deployed
 
 <!-- List the main applications/services running. Explain briefly what each does. -->
 
@@ -126,7 +126,7 @@ Purpose: [Explain what it does]
 
 Access: [How you access it]
 
-Network Configuration
+## Network Configuration
 
 <!-- Describe your basic network setup. Use bullet points. -->
 
@@ -146,13 +146,13 @@ Port forwarding rule for WireGuard VPN port [e.g., 51820/udp] to the VPN server.
 
 Domain Name: Using [yourdomain.com] managed via [e.g., Cloudflare DNS / Google Domains].
 
-Network Diagram
+## Network Diagram
 
 <!-- Embed your network diagram image here. Upload it to the repository first. -->
 
 <!-- Caption: Figure 3: Visual representation of the home lab network topology. -->
 
-Key Configuration Files
+## Key Configuration Files
 
 <!-- Paste relevant snippets (not huge files) of your configs. Use code blocks! -->
 
@@ -205,7 +205,7 @@ Endpoint = [yourdomain.com or public IP]:[WireGuard Port]
 AllowedIPs = 192.168.1.0/24, 10.0.0.1/32  # Allows access to home LAN and VPN server itself
 
 
-Challenges & Solutions
+## Challenges & Solutions
 
 <!-- This is CRITICAL. Describe problems you faced and how you fixed them. -->
 
@@ -221,7 +221,7 @@ Challenge: [Describe another problem, e.g., Nextcloud performance issues, Docker
 
 Solution: [Explain how you diagnosed and fixed it, e.g., researched logs, adjusted resource limits, found a specific command]
 
-Future Plans
+## Future Plans
 
 <!-- What do you want to add or improve next? -->
 
@@ -235,7 +235,7 @@ Deploy [Another Service, e.g., Plex Media Server, Home Assistant].
 
 Upgrade server hardware or add more storage.
 
-Resources Used
+## Resources Used
 
 <!-- List tutorials, guides, or documentation you found helpful. -->
 
