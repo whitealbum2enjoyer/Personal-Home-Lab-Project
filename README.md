@@ -10,19 +10,6 @@ This repository documents the setup, configuration, and evolution of my personal
 
 <!-- Caption: Figure 1: The main server running on repurposed hardware. -->
 
-## Table of Contents
-
-* Goal
-* Hardware
-* Software & Operating Systems
-* Key Services Deployed
-* Network Configuration
-* Network Diagram
-* Key Configuration Files
-* Challenges & Solutions
-* Future Plans
-* Resources Used
-
 ## Goal
 
 <!-- Explain why you built this lab. What did you want to learn or achieve? -->
