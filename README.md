@@ -13,23 +13,14 @@ This repository documents the setup, configuration, and evolution of my personal
 ## Table of Contents
 
 * Goal
-
 * Hardware
-
 * Software & Operating Systems
-
 * Key Services Deployed
-
 * Network Configuration
-
 * Network Diagram
-
 * Key Configuration Files
-
 * Challenges & Solutions
-
 * Future Plans
-
 * Resources Used
 
 ## Goal
@@ -39,42 +30,37 @@ This repository documents the setup, configuration, and evolution of my personal
 The primary goal of this project was to gain hands-on experience with:
 
 * Linux system administration (specifically Arch Linux).
-
 * Containerization using Docker.
-
 * Network services like DNS (Pi-hole) and reverse proxies (Nginx Proxy Manager).
-
 * Self-hosting applications (Nextcloud).
-
 * Basic network security principles (VPNs, Firewall Rules).
-
 * Utilizing older hardware effectively.
 
 ## Hardware
 
 <!-- List the physical components of your lab. Be specific! -->
 
-Server:
+* Server:
 
-Model: Dell Optiplex [Your Model] / [Your Old Laptop Model]
+  * Model: Dell Optiplex [Your Model] / [Your Old Laptop Model]
 
-CPU: [e.g., Intel Core i5-xxxx]
+  * CPU: [e.g., Intel Core i5-xxxx]
 
-RAM: [e.g., 16GB DDR3]
+  * RAM: [e.g., 16GB DDR3]
 
-Storage: [e.g., 256GB SSD (OS) + 1TB HDD (Data)]
+  * Storage: [e.g., 256GB SSD (OS) + 1TB HDD (Data)]
 
-Networking Gear:
+* Networking Gear:
 
-Router: [e.g., ISP Provided Router / pfSense Box]
+  * Router: [e.g., ISP Provided Router / pfSense Box]
 
-Switch: [e.g., TP-Link 5-port Unmanaged Switch (if applicable)]
+  * Switch: [e.g., TP-Link 5-port Unmanaged Switch (if applicable)]
 
-Other:
+* Other:
 
-[e.g., Raspberry Pi for Pi-hole (if separate)]
+  * [e.g., Raspberry Pi for Pi-hole (if separate)]
 
-[e.g., External USB Drive for Backups]
+  * [e.g., External USB Drive for Backups]
 
 <!-- Add a picture of your hardware if you like -->
 
@@ -86,9 +72,9 @@ Other:
 
 <!-- List the main OS and virtualization/container software. -->
 
-Operating System: [e.g., Arch Linux / Ubuntu Server 22.04 LTS / Proxmox VE]
+* Operating System: [e.g., Arch Linux / Ubuntu Server 22.04 LTS / Proxmox VE]
 
-Containerization: Docker & Docker Compose
+* Containerization: Docker & Docker Compose
 
 Virtualization: [e.g., Proxmox / VMware ESXi (if used)]
 
@@ -96,55 +82,55 @@ Virtualization: [e.g., Proxmox / VMware ESXi (if used)]
 
 <!-- List the main applications/services running. Explain briefly what each does. -->
 
-Pi-hole:
+* Pi-hole:
 
-Purpose: Network-wide ad-blocking and local DNS server.
+  * Purpose: Network-wide ad-blocking and local DNS server.
 
-Access: http://[pihole-ip]/admin (or via reverse proxy)
+  * Access: http://[pihole-ip]/admin (or via reverse proxy)
 
-Nginx Proxy Manager (NPM):
+* Nginx Proxy Manager (NPM):
 
-Purpose: Manages reverse proxy entries, handles SSL certificates (Let's Encrypt), and simplifies secure access to services.
+  * Purpose: Manages reverse proxy entries, handles SSL certificates (Let's Encrypt), and simplifies secure access to services.
 
-Access: http://[npm-ip]:81
+  * Access: http://[npm-ip]:81
 
-Nextcloud:
+* Nextcloud:
 
-Purpose: Private cloud storage, file sharing, and collaboration suite.
+  * Purpose: Private cloud storage, file sharing, and collaboration suite.
 
-Access: https://nextcloud.yourdomain.com (via NPM)
+  * Access: https://nextcloud.yourdomain.com (via NPM)
 
-WireGuard VPN:
+* WireGuard VPN:
 
-Purpose: Secure remote access to the home network.
+  * Purpose: Secure remote access to the home network.
 
-Configuration: Managed via [e.g., wg-easy Docker container / manual config files].
+  * Configuration: Managed via [e.g., wg-easy Docker container / manual config files].
 
-[Add More Services As You Deploy Them]:
+* [Add More Services As You Deploy Them]:
 
-Purpose: [Explain what it does]
+  * Purpose: [Explain what it does]
 
-Access: [How you access it]
+  * Access: [How you access it]
 
 ## Network Configuration
 
 <!-- Describe your basic network setup. Use bullet points. -->
 
-IP Addressing Scheme: [e.g., 192.168.1.0/24]
+* IP Addressing Scheme: [e.g., 192.168.1.0/24]
 
-Server IP: [e.g., Static IP 192.168.1.50 assigned via DHCP reservation]
+* Server IP: [e.g., Static IP 192.168.1.50 assigned via DHCP reservation]
 
-DNS: All network clients configured (via DHCP) to use Pi-hole ([Pi-hole IP]) as the primary DNS server.
+* DNS: All network clients configured (via DHCP) to use Pi-hole ([Pi-hole IP]) as the primary DNS server.
 
-Firewall: [e.g., Using pfSense firewall / basic router firewall]. Key rules include:
+* Firewall: [e.g., Using pfSense firewall / basic router firewall]. Key rules include:
 
-Port forwarding rules for ports 80 and 443 to Nginx Proxy Manager server.
+  * Port forwarding rules for ports 80 and 443 to Nginx Proxy Manager server.
 
-Port forwarding rule for WireGuard VPN port [e.g., 51820/udp] to the VPN server.
+  * Port forwarding rule for WireGuard VPN port [e.g., 51820/udp] to the VPN server.
 
-[Add any other significant rules, like VLAN configurations if you set them up]
+  * [Add any other significant rules, like VLAN configurations if you set them up]
 
-Domain Name: Using [yourdomain.com] managed via [e.g., Cloudflare DNS / Google Domains].
+* Domain Name: Using [yourdomain.com] managed via [e.g., Cloudflare DNS / Google Domains].
 
 ## Network Diagram
 
@@ -159,7 +145,7 @@ Domain Name: Using [yourdomain.com] managed via [e.g., Cloudflare DNS / Google D
 Docker Compose (docker-compose.yml)
 
 # Example snippet for Pi-hole
-services:
+```services:
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
@@ -174,7 +160,7 @@ services:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
     restart: unless-stopped
-
+```
 
 Nginx Proxy Manager (Example Proxy Host Setup)
 
