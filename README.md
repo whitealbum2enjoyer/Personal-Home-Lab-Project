@@ -28,10 +28,8 @@ The primary goal of this project is to gain hands-on experience with:
 <!-- List the physical components of your lab. Be specific! -->
 
 * Server:
-  * Model: Dell Optiplex [Your Model] / [Your Old Laptop Model]
-  * CPU: [e.g., Intel Core i5-xxxx]
-  * RAM: [e.g., 16GB DDR3]
-  * Storage: [e.g., 256GB SSD (OS) + 1TB HDD (Data)]
+  * Model: Old laptop
+
 
 * Networking Gear:
   * Router: [e.g., ISP Provided Router / pfSense Box]
@@ -51,7 +49,7 @@ The primary goal of this project is to gain hands-on experience with:
 
 <!-- List the main OS and virtualization/container software. -->
 
-* Operating System: [e.g., Arch Linux / Ubuntu Server 22.04 LTS / Proxmox VE]
+* Operating System: Arch Linux
 * Containerization: Docker & Docker Compose
 
 Virtualization: [e.g., Proxmox / VMware ESXi (if used)]
@@ -62,15 +60,12 @@ Virtualization: [e.g., Proxmox / VMware ESXi (if used)]
 
 * Pi-hole:
   * Purpose: Network-wide ad-blocking and local DNS server.
-  * Access: http://[pihole-ip]/admin (or via reverse proxy)
 
 * Nginx Proxy Manager (NPM):
   * Purpose: Manages reverse proxy entries, handles SSL certificates (Let's Encrypt), and simplifies secure access to services.
-  * Access: http://[npm-ip]:81
 
 * Nextcloud:
   * Purpose: Private cloud storage, file sharing, and collaboration suite.
-  * Access: https://nextcloud.yourdomain.com (via NPM)
 
 * WireGuard VPN:
   * Purpose: Secure remote access to the home network.
@@ -182,8 +177,6 @@ Upgrade server hardware or add more storage.
 ## Resources Used
 
 <!-- List tutorials, guides, or documentation you found helpful. -->
-
-YouTube - Christian Lempa's Home Server Series
 
 Docker Documentation
 
