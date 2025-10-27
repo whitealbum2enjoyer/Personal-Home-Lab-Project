@@ -131,7 +131,7 @@ Virtualization: [e.g., Proxmox / VMware ESXi (if used)]
 
 Docker Compose (docker-compose.yml)
 
-# Example snippet for Pi-hole
+## Example snippet for Pi-hole
 ```services:
   pihole:
     container_name: pihole
@@ -165,7 +165,7 @@ SSL: Enabled using Let's Encrypt certificate. Force SSL and HTTP/2 support enabl
 
 WireGuard Config (wg0.conf - Client Example)
 
-# Example client config
+## Example client config
 [Interface]
 PrivateKey = [CLIENT_PRIVATE_KEY]
 Address = 10.0.0.2/32
