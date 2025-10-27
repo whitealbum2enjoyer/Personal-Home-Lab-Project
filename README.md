@@ -164,15 +164,15 @@ AllowedIPs = 192.168.1.0/24, 10.0.0.1/32  # Allows access to home LAN and VPN se
 
 <!-- What do you want to add or improve next? -->
 
-Implement automated backups for Docker volumes and configurations.
+* Implement automated backups for Docker volumes and configurations.
 
-Set up monitoring using Grafana and Prometheus.
+* Set up monitoring using Grafana and Prometheus.
 
-Explore setting up VLANs to segment network traffic.
+* Explore setting up VLANs to segment network traffic.
 
-Deploy [Another Service, e.g., Plex Media Server, Home Assistant].
+* Deploy [Another Service, e.g., Plex Media Server, Home Assistant].
 
-Upgrade server hardware or add more storage.
+* Upgrade server hardware or add more storage.
 
 ## Resources Used
 
