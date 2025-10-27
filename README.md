@@ -27,7 +27,7 @@ This repository documents the setup, configuration, and evolution of my personal
 
 <!-- Explain why you built this lab. What did you want to learn or achieve? -->
 
-The primary goal of this project was to gain hands-on experience with:
+The primary goal of this project is to gain hands-on experience with:
 
 * Linux system administration (specifically Arch Linux).
 * Containerization using Docker.
