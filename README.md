@@ -156,17 +156,14 @@ AllowedIPs = 192.168.1.0/24, 10.0.0.1/32  # Allows access to home LAN and VPN se
 
 <!-- This is CRITICAL. Describe problems you faced and how you fixed them. -->
 
-Challenge: Initially had issues accessing services externally via Nginx Proxy Manager.
+* Challenge: Initially had issues accessing services externally via Nginx Proxy Manager.
+  * Solution: Realized the router's firewall was blocking ports 80/443. Created port forwarding rules to allow traffic to the NPM server's IP address.
 
-Solution: Realized the router's firewall was blocking ports 80/443. Created port forwarding rules to allow traffic to the NPM server's IP address.
+* Challenge: Pi-hole DNS wasn't being used by all devices on the network.
+  * Solution: Configured the router's DHCP server settings to explicitly assign the Pi-hole's IP address as the primary DNS server for all clients.
 
-Challenge: Pi-hole DNS wasn't being used by all devices on the network.
-
-Solution: Configured the router's DHCP server settings to explicitly assign the Pi-hole's IP address as the primary DNS server for all clients.
-
-Challenge: [Describe another problem, e.g., Nextcloud performance issues, Docker container conflicts, SSL certificate renewal problems]
-
-Solution: [Explain how you diagnosed and fixed it, e.g., researched logs, adjusted resource limits, found a specific command]
+* Challenge: [Describe another problem, e.g., Nextcloud performance issues, Docker container conflicts, SSL certificate renewal problems]
+  * Solution: [Explain how you diagnosed and fixed it, e.g., researched logs, adjusted resource limits, found a specific command]
 
 ## Future Plans
 
